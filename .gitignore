@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Bases SQLite locales de dev/test — jamais commitées
+*.db
+*.db-wal
+*.db-shm
+*.db-info
+
+tests/_tmp_test_db/

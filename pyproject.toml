@@ -1,0 +1,20 @@
+[project]
+name = "montagne"
+version = "0.1.0"
+description = "Logique métier partagée entre les deux applications consommatrices (Streamlit et Next.js/FastAPI) — projections, estimation, accès données, Poche. Aucune dépendance UI : ni Streamlit, ni Next.js/FastAPI ne doivent être importés ici."
+requires-python = ">=3.12"
+dependencies = [
+    "libsql>=0.1.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
